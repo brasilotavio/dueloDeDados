@@ -174,7 +174,7 @@ a {
 
 @font-face {
   font-family: 'Gamer';
-  src: url(fontes/Gamer.ttf) format(truetype) url(fontes/MiConv.com__Gamer.otf) format(opentype);
+  src: url(fonts/Gamer.ttf) format(truetype) url(fontes/MiConv.com__Gamer.otf) format(opentype);
   font-weight: normal;
   font-style: normal;
 }
@@ -182,7 +182,7 @@ a {
 
 @font-face {
   font-family: 'Game';
-  src: url(fontes/Game-Font.ttf) format(truetype);
+  src: url(fonts/Game-Font.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
@@ -202,7 +202,6 @@ a {
 
 .justificado {
   box-sizing: border-box;
-  width: fit-content;
   padding: 2.1rem;
   border: 6px solid orangered;
   align-items: center;
