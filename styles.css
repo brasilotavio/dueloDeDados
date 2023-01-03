@@ -1,0 +1,221 @@
+.fundo {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(3, 7, 221) 0%, rgb(3, 123, 221) 37.7%, rgb(255, 102, 0) 37.7%, rgb(255, 38, 0) 49.85%, rgb(225, 70, 0) 49.85%, rgb(180, 6, 6) 100%);
+}
+
+.dado {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  margin: 30px;
+  font-family:'Gamer';
+  font-size: 6rem;
+  color: #ffffff;
+  text-decoration:underline;
+}
+
+p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: 'Gamer';
+}
+
+.resultado {
+  animation: piscar;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.imgUm {
+  width: 80%;
+  transform: perspective(200px) rotateY(25deg)
+}
+
+.imgDois {
+  width: 80%;
+  transform: perspective(200px) rotateY(-25deg)
+}
+
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.botaoSorteio {
+  width: 40%;
+  height: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Boardgame';
+  font-size: larger;
+  text-align: center;
+}
+
+.botaoFinal {
+  width: 25%;
+  height: 50px;
+  color: #ff4d00;
+  background-color: #000000;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Boardgame';
+  font-size: larger;
+  text-align: center;
+}
+
+.botaoFinal:hover {
+  color: white;
+}
+
+.botaoSorteio:hover {
+  color: #ff6a00;
+}
+
+.jogarEsquerdo {
+  animation: jogarEsquerdo;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.jogarDireito {
+  animation: jogarDireito;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+a {
+  color: white;
+}
+
+@keyframes jogarEsquerdo {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  30% {
+    transform: rotate(180deg);
+  }
+
+  60% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jogarDireito {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  30% {
+    transform: rotate(-180deg);
+  }
+
+  60% {
+    transform: rotate(-270deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 100%;
+  }
+  20% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  40% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'Gamer';
+  src: url(fontes/Gamer.ttf) format(truetype) url(fontes/MiConv.com__Gamer.otf) format(opentype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Game';
+  src: url(fontes/Game-Font.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contatosUm {
+  margin: 0.4px;
+  color: #ff4d00;
+  font-family: 'Gamer';
+}
+
+.contatosDois {
+  font-size: 2.1rem;
+  margin: 0.4px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.justificado {
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 2.1rem;
+  border: 6px solid orangered;
+  align-items: center;
+  text-align: justify;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20%;
+}
+
+
+.navBar {
+  background-color: #000000;
+  width: 100%;
+  height: 2cm;
+  opacity: 0.9;
+}
